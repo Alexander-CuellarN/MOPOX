@@ -1,0 +1,91 @@
+.myAchievementsSectionContainer {
+    width: 100%;
+    height: 70vh;
+
+    display: grid;
+    grid-template-columns: 1fr 35%;
+    grid-template-rows: 1fr;
+}
+
+.fondImageSectionmyAchievements {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    z-index: 800;
+    right: 1vw;
+}
+
+.SectionmyAchievementsContent {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.SectionmyAchievementsCarousel {
+    height: 70%;
+    width: 90%;
+    background-color: var(--color_pink);
+    position: relative;
+    left: 7vw;
+    top: 4vh;
+    z-index: 700;
+   /*  padding-right: 5vw; */
+    border-radius: 0 0 0 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+}
+
+.SectionmyAchievementsCarousel div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 3vw;
+    margin: 0 2vw;
+}
+
+.SectionmyAchievementsCarousel div .FontBig {
+    color: var(--color_font_white);
+    font-size: calc(70vw/55);
+    text-align: left;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1023px) {
+    .myAchievementsSectionContainer {
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+    
+    
+    .SectionmyAchievementsContent {
+        justify-content: center;
+        flex-flow: column nowrap;
+
+    }
+    
+    .SectionmyAchievementsCarousel {
+        height: 50vh;
+        position: static;
+        border-radius: 2vw;
+        max-width: 90vw;
+    }
+    
+    
+    .SectionmyAchievementsCarousel div .FontBig {
+        color: var(--color_font_white);
+        font-size: calc(100vw/25);
+        text-align: center;
+    }
+
+    .fondImageSectionmyAchievements {
+        height: 20vh;
+        width: 100%;
+        position: static;
+        background-position: center top;
+    }
+}

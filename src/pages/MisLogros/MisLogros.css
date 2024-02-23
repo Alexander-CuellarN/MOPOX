@@ -1,0 +1,13 @@
+.myAchievementsContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.myAchievementsSections{
+    height: auto;
+    width: 100vw;
+    background-image: url("../../../src/assets/FONDOS/FONDO_2.webp");
+    background-position: center;
+    background-size: cover;
+}

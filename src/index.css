@@ -1,0 +1,75 @@
+:root {
+  --color_purple: #250d3b;
+  --color_pink: #ed174e;
+  --color_blue: #41c0be;
+  --color_font_white: #fffdff;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color_pink);
+  -webkit-scrollbar-width: thin;
+}
+
+/* body{
+  overflow-x: hidden;
+} */
+body::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+body::-webkit-scrollbar:vertical {
+  width: 0.5vw;
+}
+
+body::-webkit-scrollbar-button:increment,
+body::-webkit-scrollbar-button {
+  display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color_pink);
+}
+
+:root::scrollbar-thumb{
+  background-color: var(--color_pink);
+}
+
+@font-face {
+  font-family: "Lexend-Medium";
+  src: url("../src/assets/font/Lexend-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Lexend-SemiBold";
+  src: url("../src/assets/font/Lexend-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Lexend-ExtraBold";
+  src: url("../src/assets/font/Lexend-ExtraBold.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lexend-Medium";
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+.dontShowScroll {
+  overflow: hidden;
+}

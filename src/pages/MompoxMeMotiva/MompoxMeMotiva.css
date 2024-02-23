@@ -1,0 +1,13 @@
+.pagesContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.pagesSections{
+    height: auto;
+    width: 100vw;
+    background-image: url("../../../src/assets/FONDOS/FONDO_1.webp");
+    background-position: center;
+    background-size: cover;
+}

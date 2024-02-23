@@ -1,0 +1,161 @@
+.SectionContainer {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 1fr;
+    height: 70vh;
+    max-height: 70vh;
+
+}
+
+.SectionContainer>div:nth-child(1) img {
+    height: 70vh;
+    width: 30vw;
+    object-fit: contain;
+    position: relative;
+    left: 2.2vw;
+    z-index: 900;
+    transform: translate(-100vh);
+}
+
+.SectionContainer>div:nth-child(2) {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.SectionContainer>div:nth-child(2)>div:nth-child(1) {
+    height: 70%;
+    width: 90%;
+    background-color: var(--color_pink);
+    border-radius: 0 10vw 10vw 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2vw;
+}
+
+.SectionContainer>div:nth-child(2)>div:nth-child(1)>div {
+    width: 80%;
+    height: 90%;
+    position: relative;
+    left: 2vw;
+}
+
+.carousel-slider {
+    height: 100% !important;
+}
+
+
+.textColorWhite {
+    color: var(--color_font_white);
+    font-family: "Lexend-Medium";
+    padding: 0 2vw;
+}
+
+.textColorPurple {
+    color: var(--color_purple);
+    font-family: "Lexend-Medium";
+    padding-left: 0.5vw;
+}
+
+.longTextCarousel {
+    font-size: calc(70vw/35);
+}
+
+
+.largelongTextCarousel {
+    font-size: calc(70vw/50);
+}
+
+.CarouselContainer .carousel-root {
+    height: 100% !important;
+}
+
+.SectionContainerAnimated {
+    animation: showElementLeft .5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.SectionContainerAnimatedDelay {
+    transform: translateX(-50%) scaleX(0);
+    animation: showElementright .5s ease-in-out;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes showElementLeft {
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(0vw);
+    }
+}
+
+@keyframes showElementright {
+    0% {
+        transform: translateX(-50%) scaleX(0);
+    }
+
+    100% {
+        transform: translateX(0) scaleX(1);
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1023px) {
+    .SectionContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        height: auto;
+    }
+
+    .SectionContainer>div:nth-child(1) img {
+        height: 25vh;
+        width: 100vw;
+        object-fit: contain;
+        object-position: top center;
+        position: relative;
+        top: 2%;
+        left: 0;
+    }
+
+    .SectionContainer>div:nth-child(2)>div:nth-child(1) {
+        height: 30vh;
+        width: 100%;
+        background-color: var(--color_pink);
+        border-radius: 0;
+        padding-left: 0;
+        max-width: 100vw;
+        position: relative;
+        z-index: 1000;
+    }
+
+    .SectionContainer>div:nth-child(2)>div:nth-child(1)>div {
+        width: 100%;
+        height: 100%;
+        position: static;
+        left: 3vw;
+    }
+
+    .mainSectionCarousel p {
+        padding: 0 4vw;
+    }
+
+    .longTextCarousel {
+        font-size: calc(100vw/22);
+    }
+
+
+    .largelongTextCarousel {
+        font-size: calc(100vw/28);
+    }
+    .textColorPurple {
+        padding-left:2vw;
+    }
+
+
+}

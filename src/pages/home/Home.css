@@ -1,0 +1,43 @@
+.homeContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.homeSections{
+    height: auto;
+    width: 100vw;
+    background-image: url("../../../src/assets/FONDOS/FONDO_1.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+.homeSections article {
+    height: 100vh;
+    width: 100vw;
+}
+
+.homeSections article video{
+    height: 100vh;
+    width: 100vw;
+}
+
+.homeVideo{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1023px) {
+    .homeSections article {
+        height: auto;
+        width: 100vw;
+    }
+    .homeSections article video{
+        height: 50vh;
+        width: 100vw;
+    }
+
+    .homeVideo{
+        object-fit: contain;
+    }
+}

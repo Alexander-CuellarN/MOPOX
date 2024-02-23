@@ -1,0 +1,155 @@
+.purposeSectionContainer {
+    width: 100%;
+    height: 70vh;
+
+    display: grid;
+    grid-template-columns: 1fr 35%;
+    grid-template-rows: 1fr;
+}
+
+.fondImageSectionpurpose {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    z-index: 800;
+    left: 1vw;
+}
+
+.SectionpurposeContent {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.SectionpurposeCarousel {
+    height: 70%;
+    width: 90%;
+    background-color: var(--color_blue);
+    position: relative;
+    left: 6vw;
+    top: 4vh;
+    z-index: 700;
+    /*  padding-right: 5vw; */
+    border-radius: 0 0 0 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+}
+
+.purposeCarousel {
+    width: 90% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2vw;
+    /* margin: 0 2vw; */
+}
+
+.purposeCarousel .FontBig {
+    color: var(--color_font_white);
+    font-size: calc(100vw/72);
+    text-align: left;
+}
+
+.purposeCarousel p {
+    padding: 0 2.1vw;
+}
+
+.carousel-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FontBlue {
+    color: var(--color_blue);
+    font-family: "Lexend-ExtraBold";
+}
+
+.FontPurple {
+    color: var(--color_purple);
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1023px) {
+    .purposeSectionContainer {
+        grid-template-columns: 1fr;
+        height: auto;
+        width: 100%;
+    }
+
+    .fondImageSectionpurpose {
+        height: 20vh;
+        width: 100%;
+        background-size: contain;
+        background-position: center top;
+
+    }
+
+    .SectionpurposeContent {
+        height: 100%;
+        width: 100%;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+    .SectionpurposeCarousel {
+        height: 50vh;
+        width: 90%;
+        position: static;
+        padding-right: 0;
+        border-radius: 0;
+        max-width: 90vw;
+        border-radius: 2vw;
+    }
+
+    .purposeCarousel {
+        width: 100% !important;
+        height: 100% !important;
+        padding: 5vh 2vw;
+        margin: 0 2vw;
+    }
+
+    .purposeCarousel .FontBig {
+        padding: 0 2vw;
+        color: var(--color_font_white);
+        font-size: calc(100vw/27);
+        text-align: center;
+    }
+
+    .purposeCarousel p {
+        padding: 0 2.1vw;
+    }
+
+    .carousel-slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .FontBlue {
+        color: var(--color_blue);
+        font-family: "Lexend-ExtraBold";
+    }
+
+    .FontPurple {
+        color: var(--color_purple);
+    }
+
+    .slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
